@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<script>
+			function printEvenBetween(a, b){
+				var numArray = [];
+				var evenArray = [];
+				var evenNum;
+				
+				for(var i = a; i < b; i++){
+					numArray.push(i);
+				}
+				
+				for(var i = 0; i < numArray.length; i++){
+					evenNum = i % 2;
+					if(i > 0 && evenNum == 0){
+						evenArray.push(i);
+					}
+				}
+				console.log(numArray);
+				console.log(evenArray);
+
+			}
+
+
+			printEvenBetween(1, 10);
+
+		</script>
+	</body>
+</html>
